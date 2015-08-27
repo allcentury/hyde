@@ -10,8 +10,8 @@ relative_permalinks: true
 title:            AR
 tagline:          'A Development Blog'
 description:      'A developer at Validic focusing on code maintainability.  Find me on github <a href="http://github.com/allcentury" target="_blank">@allcentury</a>.'
-url:              allcentury.github.io/hyde/
-baseurl:          http://allcentury.github.io/hyde/
+url:              allcentury.github.io
+baseurl:          /hyde/
 
 author:
   name:           'Anthony Ross'
