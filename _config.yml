@@ -7,15 +7,15 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title:            AR
+tagline:          'A Development Blog'
+description:      'A developer at Validic focusing on code maintainability.  Find me on github <a href="http://github.com/allcentury" target="_blank">@allcentury</a>.'
 url:              http://hyde.getpoole.com
-baseurl:          /
+baseurl:          http://allcentury.github.io/poole
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Anthony Ross'
+  url:            https://twitter.com/allcentury
 
 paginate:         5
 
@@ -23,4 +23,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/allcentury/
