@@ -10,7 +10,7 @@ relative_permalinks: true
 title:            AR
 tagline:          'A Development Blog'
 description:      'A developer at Validic focusing on code maintainability.  Find me on github <a href="http://github.com/allcentury" target="_blank">@allcentury</a>.'
-url:
+url:              allcentury.github.io/hyde/
 baseurl:          http://allcentury.github.io/hyde/
 
 author:
@@ -22,5 +22,4 @@ paginate:         5
 # Custom vars
 version:          2.1.0
 
-github:
-  repo:           https://github.com/allcentury/
+github:           https://github.com/allcentury
