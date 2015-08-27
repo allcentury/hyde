@@ -1,7 +1,8 @@
-----
--layout: post
--title: Sharing your system clipboard with a remote station
-----
+---
+layout: post
+title: Sharing your system clipboard
+---
+
 Today I ran into an issue that had me spinning my wheels for a little too long.  I'm making it a habit to write down these moments so a.) maybe someone out there might waste less time than I did and b.) I'm sure I'll have to come back to this at some point!
 
 Today, I was ssh'd into a remote server and tried to yank something out of vim and into another vim running on my local machine.  To clarify:

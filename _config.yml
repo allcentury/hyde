@@ -15,7 +15,8 @@ baseurl:          /
 
 author:
   name:           'Anthony Ross'
-  url:            https://twitter.com/allcentury
+  url:            https://twitter.com/anthonysross
+  stacko:         http://stackoverflow.com/users/3109182/anthony
 
 paginate:         5
 
