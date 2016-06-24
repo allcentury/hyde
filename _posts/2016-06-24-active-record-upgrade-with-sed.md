@@ -62,7 +62,7 @@ sed
 Take a look at that output, did everything change correctly? If it did, great let's _actually_ edit those files.
 
 ```bash
-$ ag -l 'lambda' -G '.rb' | xargs sed -i .bak -n -E 's:lambda(.*)\|(.*)\|:->(\2)\1:p'
+$ ag -l 'lambda' -G '.rb' | xargs sed -i .bak -E 's:lambda(.*)\|(.*)\|:->(\2)\1:p'
 ```
 
 If you run `git status` you'll likely see a lot of changes.  Go ahead and confirm everything looks good.  The `.bak` files you see are copies of the original files so if you royally messed up, you can use those files or I usually just `git reset`.
