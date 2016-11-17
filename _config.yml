@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            AR
 tagline:          'A Development Blog'
-description:      'A developer at Validic focusing on code maintainability.  Find me on github <a href="http://github.com/allcentury" target="_blank">@allcentury</a>.'
+description:      'A developer at commercetools focusing on microservices and code maintainability.  Find me on github <a href="http://github.com/allcentury" target="_blank">@allcentury</a>.'
 url:              http://allcentury.github.io
 baseurl:          /
 
