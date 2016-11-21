@@ -47,16 +47,16 @@ In vim, go to `:h timeout`. The first sentence describes exactly what I was runn
 
 >[timeout and ttimeout] - These two options together determine the behavior when part of a mapped key sequence or keyboard code has been received
 
-Most importantly it states in the next paragraph that vim waits 1 second for another character to arrive before it will default to the lesser mapping.  So in my case I never had another hotkey mapped to `f` before but now that I have `f` and `fa` vim is waiting to see that once I hit `f` will I also hit `fa`?
+Most importantly it states in the next paragraph that vim waits 1 second for another character to arrive before it will default to the lesser mapping.  So in my case I never had another hotkey mapped to `f` before but now that I have `f` and `fa` vim is waiting to see that once I hit `f` will I also hit `a`?
 
-You're probably wondering if there is a way to turn off this `timeout` and sure enough there is:
+You're probably wondering if there is a way to turn off the `timeout` and sure enough there is:
 
 ```
 :set notimeout
 :set nottimeout
 ```
 
-I suggest going through `:map` and seeing if you could benefit from adjusting your timeout based on your own key mappings.  Now you need to figure out what you're going to do with all those free seconds I just gave you back...
+I suggest going through `:map` and seeing if you could benefit from adjusting your timeout based on your own key mappings.  Now you need to figure out what you're going to do with all those free seconds I just gave you back - hopefully you're in the giving spirit as we are just a few weeks away from [code.org's hour of code](https://hourofcode.com/us).  I volunteered last year and it was a blast, I hope you do the same!
 
 
 
