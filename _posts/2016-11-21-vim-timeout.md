@@ -13,7 +13,7 @@ Using the fuzzy finder:
 
 ![ctrlp2](http://i.imgur.com/ry1q5AP.png)
 
-Great - that is a joy to code with.  If you see my post below on my vim shortcut to replace `function`'s with ES6 fat arrows, I ran into something with my vim setup that was unsuspected.
+Great - that is a joy to code with.  If you see [my post below]({{ site.baseurl }}{% post_url 2016-11-17-vim-javascript-es6 %}) on my vim shortcut to replace `function`'s with ES6 fat arrows, I ran into something with my vim setup that was unsuspected.
 
 Prior to that post, I had my fuzzy finder mapped to `<leader>f`, as shown here in my `~/.vimrc`:
 
