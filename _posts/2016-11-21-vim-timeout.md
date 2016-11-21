@@ -56,7 +56,7 @@ You're probably wondering if there is a way to turn off this `timeout` and sure 
 :set nottimeout
 ```
 
-I suggest going through `:map` and seeing if you could benefit from adjusting your timeout based on your own key mappings.  Hopefully all those seconds I just saved you saves you sometime!
+I suggest going through `:map` and seeing if you could benefit from adjusting your timeout based on your own key mappings.  Now you need to figure out what you're going to do with all those free seconds I just gave you back...
 
 
 
