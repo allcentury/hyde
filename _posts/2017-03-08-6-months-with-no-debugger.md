@@ -38,7 +38,7 @@ Of course, the internet has no shortage of opinions on the matter.  I know what 
 
 All of those opinions are completely valid, but in my time developing software I can say with confidence there is no absolute truth to finding and fixing issues in code.  I've done it 100 ways, some which took me seconds and some which took me weeks.
 
-So I decided not to look for a node.js equivalent to pry and that meant I fell back on the ol' C way of debugging I grew up on, print statements.  Or rather in node.js case, console.log statements.  It was not an easy transition.  There were two main pain points early on, 1. I was still learning node.js and learning a language with print statements is *slow*.  Very, very slow.  2. Console.log did not always give me the output I was expecting.  In fact many objects in javascript don't really respond to `toString()` in a meaningful way.
+So I decided to not look for a node.js equivalent to pry and that meant I fell back on the ol' C way of debugging that I grew up on, print statements.  Or rather in node.js case, console.log statements.  It was not an easy transition.  There were two main pain points early on, 1. I was still learning node.js and learning a language with print statements is *slow*.  Very, very slow.  2. Console.log did not always give me the output I was expecting.  In fact many objects in javascript don't really respond to `toString()` in a meaningful way.
 
 I had to start creating some tooling again to help me because either I'd get buried in documentation or I'd go digging through source code just to find out what methods an object had.  Here comes more vim keys...
 
@@ -83,6 +83,8 @@ function! ExecuteFile(filename)
 endfunction
 ```
 
+I also set up a similar command to run tests via `<leader>t`.  It would look at the file extension and run the test file.
+
 So what was my 10 step process with pry is now a little different with node.js.
 
 1. Run test!
@@ -99,7 +101,4 @@ So what was my 10 step process with pry is now a little different with node.js.
 So still 10 steps.  However, I did notice a conscious change in behavior.  Before with pry, I wouldn't start to debug my code until I was at the familiar pry prompt.  Yes, you read that right.  I would instinctively add the `binding.pry` and just rerun and wait for the prompt before starting to check local variables, method definitions, etc.  I imagine that just manifested out of habit and speed - there are many times in the day where my fingers are faster than my brain.  With my node.js workflow, I started to notice myself combing through code line by line with much greater detail because it was so slow to debug with print statements.  I didn't want to keep adding print statements for every variable I forgot and I was tired of adding `toString()` to every single object when I was primarily just enforcing that API because of debugging.
 
 Now 6 months later, I decided to see if using the [node debugger](https://nodejs.org/api/debugger.html) would be a welcome change to my workflow.  I've found that I don't care to use it when it's my own code.  So I'm going to try to not use the debugger on code that I have written.  For code that I didn't write, such as the zillion npm packages that are out there - I'm giving myself a bit more wiggle room.  These packages, most of which are still in ES5, are not easy for me to navigate.  I'd say I'm proficient in javascript now but for large libraries, there is no way for me to debug someone else's code quickly.  Instead, I'm allowing myself to use the debugger when the stacktrace is pointing to something in my node_modules folder.  I haven't automated this just yet but I will and when I do, I'll update this blog post.  Thanks for reading!
-
-
-
 
