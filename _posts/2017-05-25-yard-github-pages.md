@@ -15,7 +15,7 @@ Here I've set this project to render a page from the `/docs` folder on the maste
 $ yardoc
 ```
 
-The output is actually put in `doc`.  In order to change that you need to run:
+The output is actually put in the directory `doc`.  In order to change that you need to run:
 
 ```shell
 $ yardoc -o docs
@@ -38,4 +38,6 @@ echo "Running documentation"
 yard doc -o docs
 ```
 
-Now with every commit you'll ensure your documentation is re-rendered and ready to push.  There is a downside to this though, something I haven't been able to figure out yet.  When yard generates docs it puts a timestamp in the HTML that git picks up as new changes.  Ideally we could suppress those file changes if that's all that changed.  Looking at Yard's source, it appears you'd have to write your own templates.
+Now with every commit you'll ensure your documentation is re-rendered and ready to push.  There is a downside to this though, something I haven't been able to figure out yet.  When yard generates docs it puts a timestamp in the HTML that git picks up as new changes.  Ideally we could suppress those file changes if that's all that changed.  Looking at Yard's source, it appears you'd have to write your own templates.  I'll update this post once I've completed that!
+
+Thanks for reading.
