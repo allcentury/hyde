@@ -23,18 +23,15 @@ $ yardoc -o docs
 
 Now that we've got the right folder we can push up to Github (either on a feature branch or directly on master).  It can take a few minutes but you should see your yard documentation served.
 
-In order to automate this, I created a git hook that lives in your local project under `.git/hooks/pre-commit`. Make sure you give executable permissions to that new file:
+In order to automate this, I created a git hook that lives in your local project under `.git/hooks/pre-push`. Make sure you give executable permissions to that new file:
 
 ```sh
-$ chmod u+x .git/hooks/pre-commit
+$ chmod u+x .git/hooks/pre-push
 ```
 
 Then in that file paste:
 
 ```sh
-#! /bin/sh
-
-
 #! /bin/bash
 
 echo "Running documentation"
@@ -42,6 +39,11 @@ echo "Running documentation"
 files=$(git diff --name-only)
 yardfiles=$(sed 's/ /,/g' <<< $files)
 yard doc -o docs $yardfiles
+
+echo "Including doc changes in a separate commit"
+
+git add docs/
+git commit -m "Updated documentation"
 ```
 
 Now with every commit you'll ensure your documentation is re-rendered for files changed and ready to push.  There is a downside to this though, something I haven't been able to figure out yet.  When yard generates docs it puts a timestamp in the HTML that git picks up as new changes.  Ideally we could suppress those file changes if that's all that changed.  Looking at Yard's source, it appears you'd have to write your own templates to make that work.  I'll update this post if I go down that route but for now this is good enough for me.
