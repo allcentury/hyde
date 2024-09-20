@@ -8,14 +8,14 @@ permalink:        pretty
 # Setup
 title:            AR
 tagline:          'A Development Blog'
-description:      'A developer at Brex focusing on Fintech.  Find me on github <a href="http://github.com/allcentury" target="_blank">@allcentury</a>.'
+description:      'A engineer (and manager) at Brex focusing on Fintech.  <3 automated tests and pair programming. Find me on github <a href="http://github.com/allcentury" target="_blank">@allcentury</a>.'
 baseurl:          /
 
 author:
   name:           'Anthony Ross'
   stacko:         http://stackoverflow.com/users/3109182/anthony
 
-paginate:         5
+paginate:         1
 
 # Custom vars
 version:          2.1.0
