@@ -8,12 +8,11 @@ permalink:        pretty
 # Setup
 title:            AR
 tagline:          'A Development Blog'
-description:      'A developer at Braintree focusing on microservices and code maintainability.  Find me on github <a href="http://github.com/allcentury" target="_blank">@allcentury</a>.'
+description:      'A developer at Brex focusing on Fintech.  Find me on github <a href="http://github.com/allcentury" target="_blank">@allcentury</a>.'
 baseurl:          /
 
 author:
   name:           'Anthony Ross'
-  url:            https://twitter.com/anthonysross
   stacko:         http://stackoverflow.com/users/3109182/anthony
 
 paginate:         5
@@ -23,3 +22,6 @@ version:          2.1.0
 gems: [jekyll-paginate]
 
 github:           https://github.com/allcentury
+
+plugins:
+  - jekyll-paginate
