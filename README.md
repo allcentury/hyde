@@ -8,5 +8,5 @@ This blog uses the Hyde theme for Jekyll.  It is a fork of the original Hyde the
 Reset baseurl because github pages is hosted at the root of the domain.
 
 ```
-bundle exec jekyll serve --baseurl ''
+bundle exec jekyll serve --baseurl '/'
 ```
