@@ -38,12 +38,12 @@ https://jobs.netflix.com/api/search?q={search_term}
 
 The response is JSON.  Note that as of 2024, this API still works but I can see now that the website is using a new endpoint via `explore.jobs.netflix.net`.
 
-So I thought, well maybe the best way to get a highly coveted job at Netflix was to be the first to know about it a new role and then be the first to apply!
+So I thought, well maybe the best way to get a highly coveted job at Netflix was to be the first to know about it and then be the first to apply!
 
 
 # Job Search Lambda
 
-I built a very simple [serverless](https://www.serverless.com) ruby application that runs a few times a day, looking for anything matching for an "engineering manager" and if it finds something, it will send me an email that looks like this:
+I built a very simple [serverless](https://www.serverless.com) ruby application that runs a few times a day, looking for anything matching "engineering manager" and if it finds something, it will send me an email that looks like this:
 
 ![netflix_email](/public/imgs/netflix_email.png)
 
@@ -51,19 +51,19 @@ You can find all the [code in the repo](https://www.github.com/allcentury/netfli
 
 # Results
 
-So this has been running now since May 27th, 2021 and while I have moved on with my life and really found my leadership style (separate post coming) I still get the emails.  Not only do I still get emails but I've been storing the results of the API the entire time because I wanted the lambda to only email me if there were new jobs that I hadn't seen before.
+So this has been running now since May 27th, 2021 and while I have moved on with my life (and possibly found my leadership style - another post coming) I still get the emails.  Not only do I still get emails but I've been storing the results of the API the entire time because I wanted the lambda to only email me if there were new jobs that I hadn't seen before.
 
 So with my S3 bucket results, I thought  maybe I should do something with this data.
 
 ## Netflix EM Job Trends
 
-First, I think it's worth calling out that job postings over time are on a continuum but are mostly trending up, especially in the earlier part of the year.  Here's what that looks like:
+First, I think it's worth calling out that job postings over time are on a continuum but are mostly trending up, especially in the earlier part of this year.  Here's what that looks like:
 
 ![netflix_em_postings](/public/imgs/netflix_em_postings.png)
 
 ## Netflix Org Trends
 
-Looking at trends over time, gives us a view into what Netflix is investing in and how that translates into jobs.  Not only that, but my search has been focused on "engineering manager" roles so one can assume that these roles, especially multiplied, are a leading indicator into org changes and growth (each EM likely having 5-10 direct reports).  Sure some might be backfills because of attrition or performance issues but I think the data is still interesting.
+Looking at trends over time, gives us a view into what Netflix is investing in and how that translates into jobs.  Not only that, but my search has been focused on "engineering manager" roles so one can assume that these roles, are a leading indicator into org changes and growth (each EM likely having 5-10 direct reports).  Sure some might be backfills because of attrition or performance issues but I think the data is still interesting.
 
 The top 3 teams/organizations for the last 3 years are:
 
