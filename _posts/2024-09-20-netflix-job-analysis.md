@@ -165,7 +165,7 @@ plt.show()
 
 # Conclusion
 
-In general, Netflix is very good about putting their values first and while Netflix's culture isn't for everyone, I think Jack Welch would have been proud of the way they've set up their values and behaviors.
+Netflix is very good about putting their values first and while Netflix's culture isn't for everyone, I think Jack Welch would have been proud.
 
 
 ## Code References
