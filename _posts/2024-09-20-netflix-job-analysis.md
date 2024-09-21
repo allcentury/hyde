@@ -138,7 +138,6 @@ plt.show()
 Links are good, but I was also curious if culture words and phrases were being embedded in the job descriptions.  I removed stop words and then compared using cosine similarity the job description to the culture doc.  Here's what that looks like:
 
 ```python
-# Create a TF-IDF vectorizer
 tfidf_vectorizer = TfidfVectorizer()
 
 # Fit the vectorizer on both the culture document and job descriptions
