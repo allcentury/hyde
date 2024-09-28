@@ -3,9 +3,7 @@ layout: post
 title: Thundering Herd + Jitter
 ---
 
-# Thundering Herd + Jitter
-
-At Braintree (a PayPal co.), it is no secret that we are big users of [Ruby on Rails(RoR)](https://rubyonrails.org).  We are also big users of a component of RoR called [ActiveJob](https://edgeguides.rubyonrails.org/active_job_basics.html).  ActiveJob is an API abstraction on top of existing background job frameworks such as [Sidekiq](https://sidekiq.org/), [Shoryuken](https://github.com/ruby-shoryuken/shoryuken) and [many more](https://edgeapi.rubyonrails.org/classes/ActiveJob/QueueAdapters.html). In this blog post, I'm going to share how I was able to get a small feature merged into ActiveJob that stopped a persistent issue.
+At Braintree it is no secret that we are big users of [Ruby on Rails(RoR)](https://rubyonrails.org).  We are also big users of a component of RoR called [ActiveJob](https://edgeguides.rubyonrails.org/active_job_basics.html).  ActiveJob is an API abstraction on top of existing background job frameworks such as [Sidekiq](https://sidekiq.org/), [Shoryuken](https://github.com/ruby-shoryuken/shoryuken) and [many more](https://edgeapi.rubyonrails.org/classes/ActiveJob/QueueAdapters.html). In this blog post, I'm going to share how I was able to get a small feature merged into ActiveJob that stopped a persistent issue.
 
 ## Context
 
@@ -67,12 +65,10 @@ We put in place the following plans:
 1. Stop the bleeding
 1. Break the coupling
 
-I'm only going to talk about how we stopped the bleeding in this post and save the decoupling solution for another post.
-
 While we were using [exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff), it doesn't exactly stop the Thundering Herd Problem.  What we need is to introduce randomness into the retry interval so the future jobs are staggered.  ActiveJob did not have randomness or a jitter argument at the time and so I suggested it via a [small PR to Rails](https://github.com/rails/rails/pull/31872).  We implemented the change locally and immediately saw our DLQ monitors stopped turning red.
 
 ![thundering-herd-jitter](/public/imgs/thunder-herd-jitter-v2.gif)
 
 Jitter is explained really well by [Marc Brooker from AWS](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/), the gist is that if you have 100 people run to a doorway, the doorway might come crashing down.  If instead everyone ran at different speeds and arrived with somewhat random intervals, the doorway is still usable and the queue pressure is significantly lessened.  At least, that's how I explained it to my kids (except I told them they're still not allowed to run in the house).
 
-The code for the animations can be found [here](https://github.com/allcentury/blog/tree/main/thundering-herd/animations)
+The code for the animations can be found [here.](https://github.com/allcentury/blog/tree/main/thundering-herd/animations)
