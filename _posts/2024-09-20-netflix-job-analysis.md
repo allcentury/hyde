@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Netflix Job Analysis
+title: How Reading the Wrong Book Led Me to Netflix
 date: 2024-09-21
 future: true
 ---
