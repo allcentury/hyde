@@ -65,13 +65,13 @@ You can find all the [code in the repo](https://www.github.com/allcentury/netfli
 
 So this has been running now since May 27th, 2021 and while I have moved on with my life (and possibly found my leadership style - another post coming) I still get the emails.  Not only do I still get emails but I've been storing the results of the API the entire time because I wanted the lambda to only email me if there were new jobs that I hadn't seen before.
 
-So with my S3 bucket results, I thought  maybe I should do something with this data.
+I've got 3+ years of data now and I thought it be intresting to look at some trends.
 
 ## Netflix EM Job Trends
 
 First, I think it's worth calling out that job postings over time are on a continuum but are mostly trending up, especially in the earlier part of this year.  Here's what that looks like:
 
-![netflix_em_postings](/public/imgs/netflix_em_postings.png)
+![netflix_em_postings](/public/imgs/netflix_em_postings_dark.png)
 
 ## Netflix Org Trends
 
@@ -85,7 +85,7 @@ The top 3 teams/organizations for the last 3 years are:
 
 Here's what that looks like over time:
 
-![netflix_orgs](/public/imgs/netflix_orgs.png)
+![netflix_orgs](/public/imgs/netflix_orgs_dark.png)
 
 
 ## Netflix Location Trends
@@ -98,7 +98,7 @@ Next, I thought it would be interesting to see where these jobs are located. Her
 
 We can see a small bump in remote roles over time but Los Gatos is still where the majority of hiring is taking place.
 
-![netflix_locations](/public/imgs/netflix_location.png)
+![netflix_locations](/public/imgs/netflix_locations_dark.png)
 
 ## Culture in Descriptions
 
@@ -131,7 +131,7 @@ plt.xticks(grouped.index[::6], rotation=45)
 plt.show()
 ```
 
-![netflix_culture_link](/public/imgs/netflix_culture_link.png)
+![netflix_culture_link](/public/imgs/netflix_culture_link_dark.png)
 
 ## Culture Embedding
 
@@ -161,7 +161,7 @@ plt.xticks(similarity_trend.index[::8], rotation=45)
 plt.show()
 ```
 
-![netflix_culture_embedding](/public/imgs/netflix_culture_embedding.png)
+![netflix_culture_embedding](/public/imgs/netflix_culture_embedding_dark.png)
 
 # Conclusion
 
