@@ -1,0 +1,18 @@
+---
+layout: post
+title: Confident Learners
+---
+
+This post isn’t my usual topic on technology. With the holidays approaching, I've been organizing some ideas, and the top contenders are DIY projects that my wife and I can do with our kids—projects like building a musical instrument, an RC car, or a retro gaming console with a Raspberry Pi. But then, as always, I start thinking about the level of independence these gifts give our kids.
+
+If my wife or I have to be there each time they use these gifts, they will inevitably lose their appeal. They won’t be something the kids can safely explore on their own, which is the opposite of what we want. (_“Safe” is a general term here— they’re not at a stage where we'd let them play video games without our consent_). I almost dismissed the musical instrument idea because neither my wife nor I know enough to teach them anything meaningful. But that was flawed and it sent me down a rabbit hole...
+
+I'm a huge fan [Opportunity Atlas](https://opportunityatlas.org/). On this site, you can plot where you were born and quickly see if you are an anomaly in terms of socio-economic movement. Want to know how likely someone from your hometown is to be incarcerated? It has that, too. Overlay this map with one from Redfin or Zillow, and it reveals something you already know—kids growing up in wealthier zip codes generally have better outcomes. I have yet to find an exception, but if you do, let me know! What’s clear is that wealthier kids often have _more_ extracurricular activities than their less-wealthy peers ([source](https://www.gov.uk/government/publications/extra-curricular-activities-soft-skills-and-social-mobility/an-unequal-playing-field-extra-curricular-activities-soft-skills-and-social-mobility)), and studies show the social and economic benefits returned to those with the means to access them ([source](https://academic.oup.com/sf/article-abstract/94/2/479/2583788)).
+
+Returning to the holiday list—how does this tie in? I was thinking that, to justify the musical instrument, we’d have to arrange music lessons. This means either paying someone to come over regularly, driving them somewhere and also being responsible for ensuring they practice between lessons. For many, this is a deal breaker. It requires money (to pay a tutor), time (to drive them), and even more time (to help them practice). It would be completely understandable for anyone to dismiss this gift. I even considered giving them the instrument and then “dealing with it later if they show further interest.” But if kids don’t have direction or an example to follow, their perception of what’s achievable is limited by what they know. If there’s no one musical around them, that’s often where it ends. Sure, we could find YouTube role models, but that’s not a path I’m excited to go down right now.
+
+This isn’t new information, but what struck me today is that one of the most valuable things wealthy kids gain is the **ability to continuously learn new things**. That sentence itself is recursive—learning new things continuously reinforces the ability to learn, which in turn makes learning new things easier, creating a positive feedback loop.
+
+Doing this over and over across a variety of topics **builds a child’s confidence to tackle new skills**. That’s what I truly want for them—I want them to see something difficult, even incomprehensible at first, and have the confidence to try anyway. Over time, they’ll recognize this pattern—things that start as hard and mysterious can become familiar and empowering tools they’ll use again and again.
+
+(We still haven't bought the musical instrument yet but I'll update when we do)
